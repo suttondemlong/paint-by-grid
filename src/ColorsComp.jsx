@@ -7,8 +7,8 @@ export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectOptions: [],
-      color: []
+      number1: [],
+      
     }
   }
 
@@ -23,18 +23,20 @@ export default class App extends Component {
     const data = res.data.records
     console.log(data)
     
-    const options = data.map(d => ({
-      "value": d.fields.numbers,
+    const colorChoice = data.map(d => ({
       "label": d.fields.colors
-      
     }))
 
-    this.setState({ selectOptions: options });
+    const numberChoice = data.filter((num) => {
+      return num.fields.numbers === 1
+    })
 
+    this.setState({ color: colorChoice });
+    this.setState({ number1: numberChoice.map((n) => n.fields.colors)});
   }
 
   handleChange(e) {
-    this.setState({ value:e })
+    this.setState({ number1:e })
   }
 
   componentDidMount() {
@@ -42,10 +44,13 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.selectOptions)
+    console.log(this.state.number1)
+    // console.log("-----------------")
+    // console.log(this.state.color)
     return (
       <div>
-        <Select options={this.state.selectOptions} onChange={this.handleChange.bind(this)} isMulti/>
+        <Select options={this.state.number1} onChange={this.handleChange.bind(this)} />
+        {/* If the value returned by this.state.number is equal to 1, print out this.state.color, if not do nothing */}
       </div>
     );
   }
