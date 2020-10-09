@@ -2,6 +2,9 @@
 
 # Project Overview
 
+[Help Request](https://docs.google.com/forms/d/e/1FAIpQLSfkrM82Kljv_Wxx_716zv2WTHb1qr_J8htnMoBOiIsP4MN02w/viewform)
+[Issue Ticket Template](https://git.generalassemb.ly/sei-nyc-phoenix/class-resources/blob/master/projects/issue-ticket-template.md)
+
 ## Project Name
 
 Painted Grits
