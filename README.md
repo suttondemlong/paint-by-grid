@@ -13,7 +13,9 @@ Painted Grits is an application where the user can choose colors to reveal an im
 ## Wireframes
 
 [Link](https://www.figma.com/proto/3L11fbptO3xASD6sKSkkgi/Painted-Grits?node-id=3%3A3&scaling=scale-down)
+
 1/7: Home page for desktop version, drop down menus are available to the left side of the grid image
+
 2/7: Example of design filled in
 3/7: Gallery page of previously saved works
 4/7: Home page for phone version, color options below the image, save button at the bottom.
@@ -31,6 +33,7 @@ Component Hierarchy can be found [here](https://www.figma.com/proto/hhXrBqiOoUYU
 Key: applS3zQZG7XxTfuu
 Base ID: applS3zQZG7XxTfuu
 
+```
 {
 "records": [
 {
@@ -60,6 +63,7 @@ Base ID: applS3zQZG7XxTfuu
 ],
 "offset": "recvQ6TL3KEmoBnup"
 }
+```
 
 ### MVP/PostMVP
 
