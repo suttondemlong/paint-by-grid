@@ -5,3 +5,11 @@
 Select {
   max-width: 300px;
 }
+
+.square {
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  display: inline-block;
+}

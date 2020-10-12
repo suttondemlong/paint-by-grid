@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Select from 'react-select';
+import Image from "./Image"
 import axios from 'axios';
 
 export default class App extends Component {
@@ -8,12 +8,25 @@ export default class App extends Component {
     super(props)
     this.state = {
       number1: [],
-      id: "",
-      label: ""
+      number2: [],
+      number3: [],
+      number4: [],
+      number5: [],
+      number6: [],
+      number7: [],
+      number8: [],
+      selected1: "",
+      selected2: "",
+      selected3: "",
+      selected4: "",
+      selected5: "",
+      label: "",
     }
   }
 
   async getOptions() {
+   
+
     const airTableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/painted-grits`
     const res = await axios.get(airTableURL, {
       headers: {
@@ -24,22 +37,95 @@ export default class App extends Component {
     const data = res.data.records
     // console.log(data)
     
-    const colorChoice = data.map(d => ({
-      "label": d.fields.colors
-    }))
 
-    const numberChoice = data.filter((num) => {
+    // -----------------------------------------------
+    const numberChoice1 = data.filter((num) => {
       return num.fields.numbers === 1
     })
 
-    // this.setState({ color: colorChoice });
-    this.setState({ number1: numberChoice.map(d => ({
+    this.setState({ number1: numberChoice1.map(d => ({
       "label": d.fields.colors
-    }))});
+      }))
+    });
+    // -----------------------------------------------
+    const numberChoice2 = data.filter((num) => {
+      return num.fields.numbers === 2
+    })
+
+    this.setState({
+      number2: numberChoice2.map(d => ({
+        "label": d.fields.colors
+      }))
+    });
+  //--------------------------------------------------
+    const numberChoice3 = data.filter((num) => {
+      return num.fields.numbers === 3
+    })
+
+    this.setState({
+      number3: numberChoice3.map(d => ({
+      "label": d.fields.colors
+     }))
+    });
+  //--------------------------------------------------  
+  const numberChoice4 = data.filter((num) => {
+    return num.fields.numbers === 4
+  })
+
+  this.setState({
+    number4: numberChoice4.map(d => ({
+      "label": d.fields.colors
+    }))
+  });
+//--------------------------------------------------
+const numberChoice5 = data.filter((num) => {
+  return num.fields.numbers === 5
+})
+
+this.setState({
+  number5: numberChoice5.map(d => ({
+    "label": d.fields.colors
+  }))
+});
+//--------------------------------------------------
+const numberChoice6 = data.filter((num) => {
+  return num.fields.numbers === 6
+})
+
+this.setState({
+  number6: numberChoice6.map(d => ({
+    "label": d.fields.colors
+  }))
+});
+//--------------------------------------------------
+const numberChoice7 = data.filter((num) => {
+  return num.fields.numbers === 7
+})
+
+this.setState({
+  number7: numberChoice7.map(d => ({
+    "label": d.fields.colors
+  }))
+});
+//--------------------------------------------------
+const numberChoice8 = data.filter((num) => {
+  return num.fields.numbers === 8
+})
+
+this.setState({
+  number8: numberChoice8.map(d => ({
+    "label": d.fields.colors
+  }))
+});
+//--------------------------------------------------
   }
 
-  handleChange(e) {
-    this.setState({ number1: e })
+  // handleChange(e) {
+  //   this.setState({ number1: e.target.value })
+  // }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   componentDidMount() {
@@ -47,13 +133,65 @@ export default class App extends Component {
     this.getOptions()
   }
 
+  componentWillMount() {
+
+  }
+
   render() {
-    console.log(this.state.number1)
+    // console.log(this.state.number1)
     return (
       <div>
-        <Select options={this.state.number1} onChange={this.handleChange.bind(this)} />
-        {/* {this.state.number1 === null ? "" : this.state.number1} */}
-        {/* If the value returned by this.state.number is equal to 1, print out this.state.color, if not do nothing */}
+        <Image
+          number1={this.state.selected1}
+          number2={this.state.selected2}
+          number3={this.state.selected3}
+          number4={this.state.selected4}
+          number5={this.state.selected5}
+        />
+        <div>
+          <select name="selected1" onChange={this.handleChange} >
+            <option disabled selected>Number 1 Color</option>
+            {this.state.number1.map(color => (
+              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+            ))}
+          </select>
+          <select name="selected2" onChange={this.handleChange} >
+            <option disabled selected>Number 2 Color</option>
+            {this.state.number2.map(color => (
+              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+            ))}
+          </select>
+          <select name="selected3" onChange={this.handleChange} >
+            <option disabled selected>Number 3 Color</option>
+            {this.state.number3.map(color => (
+              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+            ))}
+          </select>
+          <select name="selected4" onChange={this.handleChange} >
+            <option disabled selected>Number 4 Color</option>
+            {this.state.number4.map(color => (
+              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+            ))}
+          </select>
+          <select name="selected5" onChange={this.handleChange} >
+            <option disabled selected>Number 5 Color</option>
+            {this.state.number5.map(color => (
+              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+            ))}
+          </select>
+          {/* <Select options={this.state.number1} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number2} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number3} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number4} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number5} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number6} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number7} onChange={this.handleChange.bind(this)} />
+          <Select options={this.state.number8} onChange={this.handleChange.bind(this)} /> */}
+        </div>
+        <div>
+          <button>Save Color Profile</button>
+          <button>Clear</button>
+        </div>
       </div>
     );
   }

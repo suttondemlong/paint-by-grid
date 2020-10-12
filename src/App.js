@@ -1,5 +1,6 @@
 import React from "react";
-import ColorsComp from './ColorsComp';
+// import ColorsComp from './ColorsComp';
+import ColorsComp from "./ColorsComp";
 import "./App.css";
 
 function App() {
@@ -7,13 +8,9 @@ function App() {
   return (
     <div className="App">
       <h1>Painted Grits</h1>
-      <div className="color-choice">
+      <div>
         <ColorsComp />
       </div>
-      <div className="grid">
-        
-     </div>
-      
     </div>
   ) 
 }
