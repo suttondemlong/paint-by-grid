@@ -10,6 +10,7 @@ function SaveButton(props) {
   const [color5, setColor5] = useState("")
   const [title, setTitle] = useState("")
   
+  const num1 = props.number1
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,21 +40,21 @@ function SaveButton(props) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form>
         <label htmlFor="title">Title</label>
         <input
-          name="title, color1, color2, color3, color4, color5"
+          name="title" // "color1, color2, color3, color4, color5"
           value={title}
           onChange={(e) => {
             setTitle(e.target.value)
-            setColor1(props.number1)
+            setColor1(`${props.number1}`)
             setColor2(props.number2)
             setColor3(props.number3)
             setColor4(props.number4)
             setColor5(props.number5)
           }
           } />
-        <button>Save Color Scheme</button>
+        <button onClick={handleSubmit}>Save Color Scheme</button>
       </form>
     </div>
   );
