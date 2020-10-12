@@ -120,10 +120,6 @@ this.setState({
 //--------------------------------------------------
   }
 
-  // handleChange(e) {
-  //   this.setState({ number1: e.target.value })
-  // }
-
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
@@ -134,7 +130,6 @@ this.setState({
   }
 
   componentWillMount() {
-
   }
 
   render() {
@@ -179,18 +174,6 @@ this.setState({
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>
-          {/* <Select options={this.state.number1} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number2} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number3} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number4} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number5} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number6} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number7} onChange={this.handleChange.bind(this)} />
-          <Select options={this.state.number8} onChange={this.handleChange.bind(this)} /> */}
-        </div>
-        <div>
-          <button>Save Color Profile</button>
-          <button>Clear</button>
         </div>
       </div>
     );

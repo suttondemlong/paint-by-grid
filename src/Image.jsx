@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SaveButton from "./SaveButton"
 function Image(props) {
  
   const oneStyles = {
@@ -61,7 +61,7 @@ function Image(props) {
         <div className="square" style={fiveStyles}>5</div>
         <div className="square" style={fiveStyles}>5</div>
       </div>
-
+      <SaveButton />
     </div>
   );
 }
