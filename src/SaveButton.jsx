@@ -7,13 +7,14 @@ function SaveButton(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (props.colorOne !== "" && props.colorTwo !== "" && props.colorThree !== "" && props.colorFour !== "" && props.colorFive !== "") {
+    if (props.colorOne !== "" && props.colorTwo !== "" && props.colorThree !== "" && props.colorFour !== "" && props.colorFive !== "" && props.colorSix !== "") {
       const fields = {
         color1: props.colorOne,
         color2: props.colorTwo,
         color3: props.colorThree,
         color4: props.colorFour,
         color5: props.colorFive,
+        color6: props.colorSix,
         title
       }
   

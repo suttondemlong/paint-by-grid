@@ -1,16 +1,22 @@
 import React from "react";
-// import ColorsComp from './ColorsComp';
 import ColorsComp from "./ColorsComp";
+import Gallery from "./Gallery";
+import Header from "./Header";
 import "./App.css";
+import { Route } from "react-router";
 
 function App() {
 
   return (
     <div className="App">
+      <Header />
       <h1>Painted Grits</h1>
-      <div>
+      <Route exact path="/">
         <ColorsComp />
-      </div>
+      </Route>
+      <Route path="/gallery">
+        <Gallery />
+      </Route>
     </div>
   ) 
 }

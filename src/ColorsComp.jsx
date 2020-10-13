@@ -13,13 +13,12 @@ export default class App extends Component {
       number4: [],
       number5: [],
       number6: [],
-      number7: [],
-      number8: [],
       selected1: "",
       selected2: "",
       selected3: "",
       selected4: "",
       selected5: "",
+      selected6: "",
       label: "",
     }
   }
@@ -97,27 +96,7 @@ this.setState({
     "label": d.fields.colors
   }))
 });
-//--------------------------------------------------
-const numberChoice7 = data.filter((num) => {
-  return num.fields.numbers === 7
-})
 
-this.setState({
-  number7: numberChoice7.map(d => ({
-    "label": d.fields.colors
-  }))
-});
-//--------------------------------------------------
-const numberChoice8 = data.filter((num) => {
-  return num.fields.numbers === 8
-})
-
-this.setState({
-  number8: numberChoice8.map(d => ({
-    "label": d.fields.colors
-  }))
-});
-//--------------------------------------------------
   }
 
   handleChange = (e) => {
@@ -142,6 +121,7 @@ this.setState({
           number3={this.state.selected3}
           number4={this.state.selected4}
           number5={this.state.selected5}
+          number6={this.state.selected6}
         />
         <div>
           <select name="selected1" onChange={this.handleChange} >
@@ -171,6 +151,12 @@ this.setState({
           <select name="selected5" onChange={this.handleChange} >
             <option disabled selected>Number 5 Color</option>
             {this.state.number5.map(color => (
+              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+            ))}
+          </select>
+          <select name="selected6" onChange={this.handleChange} >
+            <option disabled selected>Number 6 Color</option>
+            {this.state.number6.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>

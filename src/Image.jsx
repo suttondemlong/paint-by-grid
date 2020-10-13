@@ -24,10 +24,15 @@ function Image(props) {
     color: props.number5,
     backgroundColor: props.number5
   }
+  const sixStyles = {
+    color: props.number6,
+    backgroundColor: props.number6
+  }
 
   return (
     <div className="grid">
       <div classId="row-1">
+        <div className="square" style={oneStyles}>1</div>
         <div className="square" style={oneStyles}>1</div>
         <div className="square" style={oneStyles}>1</div>
         <div className="square" style={oneStyles}>1</div>
@@ -40,8 +45,10 @@ function Image(props) {
         <div className="square" style={twoStyles}>2</div>
         <div className="square" style={twoStyles}>2</div>
         <div className="square" style={twoStyles}>2</div>
+        <div className="square" style={twoStyles}>2</div>
       </div>
       <div classId="row-props.number5">
+        <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
@@ -54,6 +61,7 @@ function Image(props) {
         <div className="square" style={fourStyles}>4</div>
         <div className="square" style={fourStyles}>4</div>
         <div className="square" style={fourStyles}>4</div>
+        <div className="square" style={fourStyles}>4</div>
       </div>
       <div classId="row-5">
         <div className="square" style={fiveStyles}>5</div>
@@ -61,6 +69,15 @@ function Image(props) {
         <div className="square" style={fiveStyles}>5</div>
         <div className="square" style={fiveStyles}>5</div>
         <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={fiveStyles}>5</div>
+      </div>
+      <div classId="row-6">
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={sixStyles}>6</div>
       </div>
       <SaveButton
         colorOne={oneStyles.color}
@@ -68,6 +85,7 @@ function Image(props) {
         colorThree={threeStyles.color}
         colorFour={fourStyles.color}
         colorFive={fiveStyles.color}
+        colorSix={sixStyles.color}
       />
     </div>
   );
