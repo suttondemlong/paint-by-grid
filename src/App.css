@@ -14,7 +14,20 @@ Select {
   display: inline-block;
 }
 
-Link {
-  height: 30px;
-  background-color: coral;
+.nav {
+  height: 80px;
+  background-color: rgb(245, 174, 148);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-links {
+  text-align: center;
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+  display: inline-flex;
+  font-family: "Roboto Mono", monospace;
 }

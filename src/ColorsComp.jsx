@@ -35,8 +35,7 @@ export default class App extends Component {
   
     const data = res.data.records
     // console.log(data)
-    
-
+  
     // -----------------------------------------------
     const numberChoice1 = data.filter((num) => {
       return num.fields.numbers === 1
@@ -104,13 +103,11 @@ this.setState({
   }
 
   componentDidMount() {
-    console.log("compoenent mounted")
     this.getOptions()
   }
 
 
   render() {
-    // console.log(this.state.number1)
     return (
       <div>
         <Image
