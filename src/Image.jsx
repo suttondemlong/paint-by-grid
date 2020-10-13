@@ -31,7 +31,7 @@ function Image(props) {
 
   return (
     <div className="grid">
-      <div classId="row-1">
+      <div classID="row-1">
         <div className="square" style={oneStyles}>1</div>
         <div className="square" style={oneStyles}>1</div>
         <div className="square" style={oneStyles}>1</div>
@@ -39,15 +39,15 @@ function Image(props) {
         <div className="square" style={oneStyles}>1</div>
         <div className="square" style={oneStyles}>1</div>
       </div>
-      <div classId="row-2">
+      <div classID="row-2">
         <div className="square" style={twoStyles}>2</div>
-        <div className="square" style={twoStyles}>3</div>
+        <div className="square" style={twoStyles}>2</div>
         <div className="square" style={twoStyles}>2</div>
         <div className="square" style={twoStyles}>2</div>
         <div className="square" style={twoStyles}>2</div>
         <div className="square" style={twoStyles}>2</div>
       </div>
-      <div classId="row-props.number5">
+      <div classID="row-props.number5">
         <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
@@ -55,7 +55,7 @@ function Image(props) {
         <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
       </div>
-      <div classId="row-4">
+      <div classID="row-4">
         <div className="square" style={fourStyles}>4</div>
         <div className="square" style={fourStyles}>4</div>
         <div className="square" style={fourStyles}>4</div>
@@ -63,7 +63,7 @@ function Image(props) {
         <div className="square" style={fourStyles}>4</div>
         <div className="square" style={fourStyles}>4</div>
       </div>
-      <div classId="row-5">
+      <div classID="row-5">
         <div className="square" style={fiveStyles}>5</div>
         <div className="square" style={fiveStyles}>5</div>
         <div className="square" style={fiveStyles}>5</div>
@@ -71,7 +71,7 @@ function Image(props) {
         <div className="square" style={fiveStyles}>5</div>
         <div className="square" style={fiveStyles}>5</div>
       </div>
-      <div classId="row-6">
+      <div classID="row-6">
         <div className="square" style={sixStyles}>6</div>
         <div className="square" style={sixStyles}>6</div>
         <div className="square" style={sixStyles}>6</div>
