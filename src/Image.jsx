@@ -1,7 +1,6 @@
 import React from 'react';
 import SaveButton from "./SaveButton"
 function Image(props) {
-  // console.log(props)
  
   const oneStyles = {
     color: props.number1,

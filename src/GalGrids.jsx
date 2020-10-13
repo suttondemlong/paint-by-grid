@@ -14,7 +14,6 @@ function GalGrids(props) {
         }
       });
       setSchemes(galResp.data.records)
-      console.log(galResp.data.records)
     }
     getGrids();
   }, []);
@@ -24,7 +23,7 @@ function GalGrids(props) {
       {schemes.map((scheme) => (
         <div>
         <h4>{scheme.fields.title}</h4>
-      <div classId="row-1">
+      <div classID="row-1">
             <div className="square" style={{
               color: scheme.fields.color1,
               backgroundColor: scheme.fields.color1
@@ -50,7 +49,7 @@ function GalGrids(props) {
               backgroundColor: scheme.fields.color1
             }}>1</div>
       </div>
-      <div classId="row-2">
+      <div classID="row-2">
         <div className="square" style={{
               color: scheme.fields.color2,
               backgroundColor: scheme.fields.color2
@@ -76,7 +75,7 @@ function GalGrids(props) {
               backgroundColor: scheme.fields.color2
             }}>2</div>
       </div>
-      <div classId="row-props.number5">
+      <div classID="row-props.number5">
         <div className="square" style={{
               color: scheme.fields.color3,
               backgroundColor: scheme.fields.color3
@@ -102,7 +101,7 @@ function GalGrids(props) {
               backgroundColor: scheme.fields.color3
             }}>3</div>
       </div>
-      <div classId="row-4">
+      <div classID="row-4">
         <div className="square" style={{
               color: scheme.fields.color4,
               backgroundColor: scheme.fields.color4
@@ -128,7 +127,7 @@ function GalGrids(props) {
               backgroundColor: scheme.fields.color4
             }}>4</div>
       </div>
-      <div classId="row-5">
+      <div classID="row-5">
         <div className="square" style={{
               color: scheme.fields.color5,
               backgroundColor: scheme.fields.color5
@@ -154,7 +153,7 @@ function GalGrids(props) {
             backgroundColor: scheme.fields.color5
             }}>5</div>
           </div>
-          <div classId="row-6">
+          <div classID="row-6">
         <div className="square" style={{
               color: scheme.fields.color6,
               backgroundColor: scheme.fields.color6

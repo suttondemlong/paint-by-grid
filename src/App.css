@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Exo", sans-serif;
 }
 
 Select {
@@ -14,7 +15,26 @@ Select {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 Link {
   height: 30px;
   background-color: rgb(243, 154, 122);
+=======
+.nav {
+  height: 80px;
+  background-color: rgb(245, 174, 148);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-links {
+  text-align: center;
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+  display: inline-flex;
+  font-family: "Roboto Mono", monospace;
+>>>>>>> header-css
 }
