@@ -42,7 +42,8 @@ export default class App extends Component {
     })
 
     this.setState({ number1: numberChoice1.map(d => ({
-      "label": d.fields.colors
+      "label": d.fields.colors,
+      "key": d.fields.numbers
       }))
     });
     // -----------------------------------------------
@@ -52,7 +53,8 @@ export default class App extends Component {
 
     this.setState({
       number2: numberChoice2.map(d => ({
-        "label": d.fields.colors
+        "label": d.fields.colors,
+        "key": d.fields.numbers
       }))
     });
   //--------------------------------------------------
@@ -62,8 +64,9 @@ export default class App extends Component {
 
     this.setState({
       number3: numberChoice3.map(d => ({
-      "label": d.fields.colors
-     }))
+        "label": d.fields.colors,
+        "key": d.fields.numbers
+      }))
     });
   //--------------------------------------------------  
   const numberChoice4 = data.filter((num) => {
@@ -72,7 +75,8 @@ export default class App extends Component {
 
   this.setState({
     number4: numberChoice4.map(d => ({
-      "label": d.fields.colors
+      "label": d.fields.colors,
+      "key": d.fields.numbers
     }))
   });
 //--------------------------------------------------
@@ -82,7 +86,8 @@ const numberChoice5 = data.filter((num) => {
 
 this.setState({
   number5: numberChoice5.map(d => ({
-    "label": d.fields.colors
+    "label": d.fields.colors,
+    "key": d.fields.numbers
   }))
 });
 //--------------------------------------------------
@@ -92,7 +97,8 @@ const numberChoice6 = data.filter((num) => {
 
 this.setState({
   number6: numberChoice6.map(d => ({
-    "label": d.fields.colors
+    "label": d.fields.colors,
+    "key": d.fields.numbers
   }))
 });
 
@@ -122,37 +128,37 @@ this.setState({
           <select className="select-css" name="selected1" onChange={this.handleChange} >
             <option disabled defaultValue>Number 1 Color</option>
             {this.state.number1.map(color => (
-              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+              <option style={{ color: `${color.label}` }} key={color.key} value={color.label}>{color.label}</option>
             ))}
           </select>
           <select className="select-css" name="selected2" onChange={this.handleChange} >
             <option disabled defaultValue>Number 2 Color</option>
             {this.state.number2.map(color => (
-              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+              <option style={{color: `${color.label}`}} key={color.key} value={color.label}>{color.label}</option>
             ))}
           </select>
           <select className="select-css" name="selected3" onChange={this.handleChange} >
             <option disabled defaultValue>Number 3 Color</option>
             {this.state.number3.map(color => (
-              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+              <option style={{color: `${color.label}`}} key={color.key} value={color.label}>{color.label}</option>
             ))}
           </select>
           <select className="select-css" name="selected4" onChange={this.handleChange} >
             <option disabled defaultValue>Number 4 Color</option>
             {this.state.number4.map(color => (
-              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+              <option style={{color: `${color.label}`}} key={color.key} value={color.label}>{color.label}</option>
             ))}
           </select>
           <select className="select-css" name="selected5" onChange={this.handleChange} >
             <option disabled defaultValue>Number 5 Color</option>
             {this.state.number5.map(color => (
-              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+              <option style={{color: `${color.label}`}} key={color.key} value={color.label}>{color.label}</option>
             ))}
           </select>
           <select className="select-css" name="selected6" onChange={this.handleChange} >
             <option disabled defaultValue>Number 6 Color</option>
             {this.state.number6.map(color => (
-              <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
+              <option style={{color: `${color.label}`}} key={color.key} value={color.label}>{color.label}</option>
             ))}
           </select>
         </div>

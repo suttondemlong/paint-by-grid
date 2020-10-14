@@ -21,7 +21,7 @@ function GalGrids(props) {
     return (
     <div className="tiles">
       {schemes.map((scheme) => (
-      <div className="gallery-grids">
+        <div key={scheme.id} className="gallery-grids">
           <p>{scheme.fields.title}</p>
       <div className="individual-grids">
       <div classID="row-1">

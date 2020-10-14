@@ -64,7 +64,7 @@ form {
 
 @media screen and (max-width: 900px) {
   .nav-links {
-    font-size: 3vw;
+    font-size: 3vh;
   }
   .page-title {
     font-size: 7vw;
