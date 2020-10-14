@@ -63,9 +63,18 @@ form {
 }
 
 @media screen and (max-width: 900px) {
+  .nav-links {
+    font-size: 3vw;
+  }
   .page-title {
-    font-size: 6vw;
+    font-size: 7vw;
     padding-top: 5vh;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 5vw;
   }
   .square {
     border: 2px solid #7290e2;
@@ -133,12 +142,6 @@ form {
   .form {
     padding-top: 2vw;
   }
-}
-
-@media screen and (min-width: 1000px) {
-  h2 {
-    font-size: 3vw;
-  }
 
   .gallery-square {
     border: 1px solid #7290e2;
@@ -149,28 +152,32 @@ form {
   }
 
   .gallery-grids {
-    width: 15vw;
-    height: 20vw;
     display: inline-block;
     padding-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .gallery-square {
-    border: 1.5px solid #7290e2;
-    width: 10vw;
-    height: 10vw;
-    line-height: 10vw;
-    vertical-align: center;
-    margin: auto;
-  }
-  h2 {
-    font-size: 4vh;
-  }
+.gallery-square {
+  border: 1.5px solid #7290e2;
+  width: 10vw;
+  height: 10vw;
+  line-height: 10vw;
+  vertical-align: center;
+  display: inline-block;
+  margin: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 600px) {
+  .page-title {
+    font-size: 5vw;
+    padding-top: 5vh;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 3vw;
+  }
   .gallery-square {
     border: 1.5px solid #7290e2;
     width: 4vw;
