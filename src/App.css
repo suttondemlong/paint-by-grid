@@ -42,7 +42,7 @@
 }
 
 form {
-  padding-top: 5vw;
+  padding-top: 5vh;
 }
 
 .input {
@@ -75,11 +75,12 @@ form {
     padding: 5vw;
   }
   .select-css {
-    width: 30vw;
+    width: 40vw;
     margin: 5px 2vw 5px 2vw;
   }
   .select-menus {
     margin-bottom: 10vw;
+    height: 4vw;
   }
   .nav {
     padding-left: 12vw;
@@ -90,15 +91,38 @@ form {
   }
 }
 
-@media screen and (win-width: 1000px) {
-  .body {
-    display: flex;
+@media screen and (min-width: 1000px) {
+  .page-title {
+    font-size: 5vw;
+    padding: 3vh;
   }
   .square {
     border: 2px solid #7290e2;
-    width: 5vw;
-    height: 8vw;
-    line-height: 8vw;
+    width: 6vw;
+    height: 6vw;
+    line-height: 6vw;
     font-size: 3vw;
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .grid {
+    width: 40vw;
+    margin: 0 auto;
+    margin-left: 15vw;
+    padding: 2vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .select-menus {
+    width: 20vw;
+    margin-top: 100px;
+    margin-right: 20vw;
+    justify-content: center;
+  }
+  .form {
+    padding-top: 2vw;
   }
 }
