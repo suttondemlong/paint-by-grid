@@ -32,25 +32,17 @@ function Image(props) {
     <div className="grid">
       <div classID="row-1">
         <div className="square" style={oneStyles}>1</div>
+        <div className="square" style={sixStyles}>6</div>
         <div className="square" style={oneStyles}>1</div>
-        <div className="square" style={oneStyles}>1</div>
-        <div className="square" style={oneStyles}>1</div>
-        <div className="square" style={oneStyles}>1</div>
-        <div className="square" style={oneStyles}>1</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={threeStyles}>3</div>
+        <div className="square" style={threeStyles}>3</div>
       </div>
       <div classID="row-2">
-        <div className="square" style={twoStyles}>2</div>
-        <div className="square" style={twoStyles}>2</div>
-        <div className="square" style={twoStyles}>2</div>
-        <div className="square" style={twoStyles}>2</div>
-        <div className="square" style={twoStyles}>2</div>
-        <div className="square" style={twoStyles}>2</div>
-      </div>
-      <div classID="row-props.number5">
-        <div className="square" style={threeStyles}>3</div>
-        <div className="square" style={threeStyles}>3</div>
-        <div className="square" style={threeStyles}>3</div>
-        <div className="square" style={threeStyles}>3</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={oneStyles}>1</div>
+        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={oneStyles}>1</div>
         <div className="square" style={threeStyles}>3</div>
         <div className="square" style={threeStyles}>3</div>
       </div>
@@ -64,19 +56,27 @@ function Image(props) {
       </div>
       <div classID="row-5">
         <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={twoStyles}>2</div>
         <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={twoStyles}>2</div>
         <div className="square" style={fiveStyles}>5</div>
-        <div className="square" style={fiveStyles}>5</div>
-        <div className="square" style={fiveStyles}>5</div>
-        <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={twoStyles}>2</div>
+      </div>
+      <div classID="row-5">
+        <div className="square" style={threeStyles}>3</div>
+        <div className="square" style={twoStyles}>2</div>
+        <div className="square" style={threeStyles}>3</div>
+        <div className="square" style={twoStyles}>2</div>
+        <div className="square" style={threeStyles}>3</div>
+        <div className="square" style={twoStyles}>2</div>
       </div>
       <div classID="row-6">
-        <div className="square" style={sixStyles}>6</div>
-        <div className="square" style={sixStyles}>6</div>
-        <div className="square" style={sixStyles}>6</div>
-        <div className="square" style={sixStyles}>6</div>
-        <div className="square" style={sixStyles}>6</div>
-        <div className="square" style={sixStyles}>6</div>
+        <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={twoStyles}>2</div>
+        <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={twoStyles}>2</div>
+        <div className="square" style={fiveStyles}>5</div>
+        <div className="square" style={twoStyles}>2</div>
       </div>
       <SaveButton
         colorOne={oneStyles.color}
