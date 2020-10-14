@@ -118,38 +118,38 @@ this.setState({
           number5={this.state.selected5}
           number6={this.state.selected6}
         />
-        <div>
-          <select name="selected1" onChange={this.handleChange} >
+        <div className="select-menus">
+          <select className="select-css" name="selected1" onChange={this.handleChange} >
             <option disabled defaultValue>Number 1 Color</option>
             {this.state.number1.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>
-          <select name="selected2" onChange={this.handleChange} >
+          <select className="select-css" name="selected2" onChange={this.handleChange} >
             <option disabled defaultValue>Number 2 Color</option>
             {this.state.number2.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>
-          <select name="selected3" onChange={this.handleChange} >
+          <select className="select-css" name="selected3" onChange={this.handleChange} >
             <option disabled defaultValue>Number 3 Color</option>
             {this.state.number3.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>
-          <select name="selected4" onChange={this.handleChange} >
+          <select className="select-css" name="selected4" onChange={this.handleChange} >
             <option disabled defaultValue>Number 4 Color</option>
             {this.state.number4.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>
-          <select name="selected5" onChange={this.handleChange} >
+          <select className="select-css" name="selected5" onChange={this.handleChange} >
             <option disabled defaultValue>Number 5 Color</option>
             {this.state.number5.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>
             ))}
           </select>
-          <select name="selected6" onChange={this.handleChange} >
+          <select className="select-css" name="selected6" onChange={this.handleChange} >
             <option disabled defaultValue>Number 6 Color</option>
             {this.state.number6.map(color => (
               <option style={{color: `${color.label}`}} value={color.label}>{color.label}</option>

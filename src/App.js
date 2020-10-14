@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Painted Grits</h1>
+      <div className="page-title">Painted Grits</div>
       <Route exact path="/">
         <ColorsComp />
       </Route>

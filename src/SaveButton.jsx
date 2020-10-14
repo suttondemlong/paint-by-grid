@@ -35,15 +35,16 @@ function SaveButton(props) {
   return (
     <div>
       <form>
-        <label htmlFor="title">Title</label>
+        <label className="input" htmlFor="title">Title: </label>
         <input
+          className="input"
           name="title"
           value={title}
           onChange={(e) => {
             setTitle(e.target.value)
           }
           } />
-        <button onClick={handleSubmit}>Save Color Scheme</button>
+        <button className="input" onClick={handleSubmit}>Save Color Scheme</button>
       </form>
     </div>
   );

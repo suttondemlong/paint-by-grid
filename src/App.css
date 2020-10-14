@@ -3,8 +3,28 @@
   font-family: "Exo", sans-serif;
 }
 
-Select {
-  max-width: 300px;
+.nav {
+  height: 15vh;
+  background-color: rgb(245, 174, 148);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.nav-links {
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+  text-decoration: none;
+  display: inline-flex;
+  font-family: "Roboto Mono", monospace;
+}
+
+.page-title {
+  font-size: 6vh;
+  padding-top: 5vh;
 }
 
 .square {
@@ -21,23 +41,25 @@ Select {
   padding: 10vw;
 }
 
-.nav {
-  height: 80px;
-  background-color: rgb(245, 174, 148);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
+form {
+  padding-top: 5vw;
 }
 
-.nav-links {
-  text-align: center;
-  color: white;
-  /* padding: 30px; */
-  text-decoration: none;
-  display: inline-flex;
-  font-family: "Roboto Mono", monospace;
+.input {
+  margin: 5px 0 5px 0;
+}
+
+.select-menus {
+  margin-bottom: 7vw;
+}
+
+.select-css {
+  display: inline-block;
+  font-family: "Exo", sans-serif;
+  width: auto;
+  margin: 5px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 @media screen and (min-width: 1000px) {
