@@ -109,7 +109,7 @@ this.setState({
 
   render() {
     return (
-      <div>
+      <div className="body">
         <Image
           number1={this.state.selected1}
           number2={this.state.selected2}
