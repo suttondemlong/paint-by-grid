@@ -1,5 +1,7 @@
 # paint-by-grid
 
+https://objective-williams-628b36.netlify.app/
+
 # Project Overview
 
 References:
@@ -102,12 +104,12 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Day           | Deliverable                                        | Status     |
 | ------------- | -------------------------------------------------- | ---------- |
 | October 8     | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| October 9     | Project Approval                                   | Incomplete |
-| October 9 -12 | Build out grid, drop down menus, CSS               | Incomplete |
-| October 12    | Use API to populate colors in the Grid             | Incomplete |
-| October 13    | Figure out how to save image to gallery            | Incomplete |
-| October 14    | MVP                                                | Incomplete |
-| October 15    | Post MVP: work on Gallery/Other options            | Incomplete |
+| October 9     | Project Approval                                   | Complete   |
+| October 9 -12 | Build out grid, drop down menus, CSS               | Complete   |
+| October 12    | Use API to populate colors in the Grid             | Complete   |
+| October 13    | Figure out how to save image to gallery            | complete   |
+| October 14    | MVP                                                | Complete   |
+| October 15    | Post MVP: work on Gallery/Other options            | Partial    |
 | October 16    | Presentations                                      | Incomplete |
 
 ## Timeframes
@@ -118,15 +120,15 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component                               | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Grid                           |    H     |      4hrs      |               |             |
-| Build out select options                |    H     |      3hrs      |               |             |
-| Build out Airtable                      |    H     |      1hrs      |               |             |
-| CSS                                     |    H     |      6hrs      |               |             |
-| Use API to populate colors in the Grid  |    H     |      4hrs      |               |             |
-| Figure out how to save image to gallery |    H     |      8hrs      |               |             |
-| Work on Gallery                         |    H     |      4hrs      |               |             |
-| Build more grids                        |    H     |      3hrs      |               |             |
-| Total                                   |    H     |     33hrs      |               |             |
+| Creating Grid                           |    H     |      4hrs      |     3hrs      |    3hrs     |
+| Build out select options                |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Build out Airtable                      |    H     |      1hr       |      1hr      |     1hr     |
+| CSS                                     |    H     |      6hrs      |     7hrs      |    7hrs     |
+| Use API to populate colors in the Grid  |    H     |      4hrs      |     3hrs      |    3hrs     |
+| Figure out how to save image to gallery |    H     |      8hrs      |     6hrs      |    6hrs     |
+| Work on Gallery                         |    H     |      4hrs      |     4hrs      |    4hrs     |
+| Build more grids                        |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Total                                   |    H     |     33hrs      |     31hrs     |    31hrs    |
 
 ## SWOT Analysis
 
