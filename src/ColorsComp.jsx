@@ -35,8 +35,6 @@ export default class App extends Component {
     });
   
     const data = res.data.records
-    console.log(data)
-  
     // -----------------------------------------------
     const numberChoice1 = data.filter((num) => {
       return num.fields.numbers === 1
