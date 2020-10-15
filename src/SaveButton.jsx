@@ -27,9 +27,14 @@ function SaveButton(props) {
           }
         });
       setTitle("");
+      alert("Your color scheme has been saved! Check it out in the Gallery.")
     } else {
       alert("missing field");
     }
+    function handleRefresh() {
+      return window.location.reload()
+    }
+    handleRefresh()
   }
 
   return (

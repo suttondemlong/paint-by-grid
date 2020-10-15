@@ -8,7 +8,7 @@ import { Route } from "react-router";
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" >
       <Header />
       <div className="page-title">Painted Grits</div>
       <Route exact path="/">
