@@ -103,14 +103,12 @@ export default class App extends Component {
       }))
     });
 
-    this.setState({
-      numberX: numberChoice1.map(d => ({
-        "label": d.fields.colors,
-        "value": d.id,
-        "color": d.fields.colors,
-      }))
-    });
+    // Each of these below is responsible for filtering the data
+    // recieved from airtable to group the color codes with their
+    // number designations and set their state as that color with
+    // its number
     // -----------------------------------------------
+    
     const numberChoice2 = data.filter((num) => {
       return num.fields.numbers === 2
     })
@@ -123,6 +121,7 @@ export default class App extends Component {
       }))
     });
     //--------------------------------------------------
+
     const numberChoice3 = data.filter((num) => {
       return num.fields.numbers === 3
     })
@@ -170,40 +169,34 @@ export default class App extends Component {
         "color": d.fields.colors,
       }))
     });
-
+    //--------------------------------------------------
   }
 
-  // handleChange = (e) => {
-  //   preventDefault(e)
-  //   this.setState({ [e.value]: e.value })
-  // }
-
+  // Each instance of the Select tag needs its own handleChange
+  // because of the way the airtable data is configured, which
+  // has caused the above code to be written the way it is written
   handleChange1 = (e) => {
-    console.log(e)
     this.setState({ 'selected1': e.label })
   }
   handleChange2 = (e) => {
-    console.log(e)
     this.setState({ 'selected2': e.label })
   }
   handleChange3 = (e) => {
-    console.log(e)
     this.setState({ 'selected3': e.label })
   }
   handleChange4 = (e) => {
-    console.log(e)
     this.setState({ 'selected4': e.label })
   }
   handleChange5 = (e) => {
-    console.log(e)
     this.setState({ 'selected5': e.label })
   }
   handleChange6 = (e) => {
-    console.log(e)
     this.setState({ 'selected6': e.label })
   }
   // A friend helped me refactor the above handleChange functions,
-  // to make Select work.
+  // to remove the logic from the select tags (as they were before)
+  // and to make Select (react-select) work, which allowed the styling
+  // from above to be implemented.
 
   componentDidMount() {
     this.getOptions()
@@ -213,6 +206,9 @@ export default class App extends Component {
     return (
       <div className="body">
         <Image
+                    /* Passing props to Image, so that the
+          selected option can be used to style the 
+          grid squares */
           number1={this.state.selected1}
           number2={this.state.selected2}
           number3={this.state.selected3}
@@ -220,6 +216,8 @@ export default class App extends Component {
           number5={this.state.selected5}
           number6={this.state.selected6}
         />
+       {/* Select tags being populated by the information coming back from airtable that is being organized by the
+       filter and map functions above. */}
         <div className="select-menus">
           <Select options={this.state.number1} styles={colourStyles} id="selected1" onChange={this.handleChange1} />
           <Select options={this.state.number2} styles={colourStyles} id="selected2" onChange={this.handleChange2} />

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-function GalGrids(props) {
-
+function GalGrids() {
+  // defining the setState that will be used to apply color schemes to grid styling
   const [schemes, setSchemes] = useState([]);
-  
+  // Calling the 
   useEffect(() => {
     const getGrids = async () => {
       const airtableUrl = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/color-schemes?sort%5B0%5D%5Bfield%5D=createdAt&sort%5B0%5D%5Bdirection%5D=desc`
