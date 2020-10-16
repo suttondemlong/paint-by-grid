@@ -50,16 +50,7 @@ form {
 }
 
 .select-menus {
-  margin-bottom: 7vw;
-}
-
-.select-css {
-  display: inline-block;
-  font-family: "Exo", sans-serif;
-  width: auto;
-  margin: 5px;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 1vw 5vw 7vw 5vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -83,10 +74,7 @@ form {
   .grid {
     padding: 5vw;
   }
-  .select-css {
-    width: 40vw;
-    margin: 5px 2vw 5px 2vw;
-  }
+
   .select-menus {
     margin-bottom: 10vw;
     height: 4vw;
@@ -136,7 +124,7 @@ form {
   .select-menus {
     width: 20vw;
     margin-top: 100px;
-    margin-right: 20vw;
+    margin-right: 5vw;
     justify-content: center;
   }
   .form {
